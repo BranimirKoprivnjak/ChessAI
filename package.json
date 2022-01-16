@@ -1,0 +1,19 @@
+{
+  "name": "chess-ai",
+  "version": "1.0.0",
+  "description": "chess ai based on minimax algorithm",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Branimir Koprivnjak",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "2.2.0"
+  },
+  "dependencies": {
+    "@chrisoakman/chessboardjs": "^1.0.0",
+    "chess.js": "^0.12.0"
+  }
+}

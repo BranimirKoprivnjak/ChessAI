@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.css"
+    />
+    <link rel="stylesheet" href="static/styles.css" />
+    <script defer src="node_modules/jquery/dist/jquery.js"></script>
+    <script
+      defer
+      src="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.js"
+      type="module"
+    ></script>
+    <script defer src="main.js" type="module"></script>
+    <link rel="icon" href="static/chess.ico" type="image/x-icon" />
+    <title>ChessAI</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="myBoard" class="chessboard"></div>
+      <div class="sidebar">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>White</th>
+                <th>Black</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="section">
+          <div class="toolbar">
+            <button class="btn game">New Game</button>
+            <button class="btn undo">Undo</button>
+            <select id="depth" class="select">
+              <option>Depth: 3</option>
+              <option>Depth: 4</option>
+              <option>Depth: 5</option>
+            </select>
+          </div>
+          <p class="tip">
+            Note: Some moves can take long time to calculate, decrease depth to
+            speed up calculation time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
